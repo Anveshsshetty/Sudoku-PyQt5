@@ -45,18 +45,6 @@ Generate Sudoku puzzles with multiple difficulty levels or solve your own custom
 
 ---
 
-# 📂 Project Structure
-
-```
-Sudoku-PyQt5/
-│
-├── main.py
-├── README.md
-├── requirements.txt
-```
-
----
-
 # ⚙️ Code Overview
 
 | Function | Description |
@@ -78,7 +66,7 @@ Sudoku-PyQt5/
 ### 1️⃣ Clone the Repository
 
 ```bash
-git clone https://github.com/YOUR_USERNAME/Sudoku-PyQt5.git
+git clone https://github.com/AnveshsShetty/Sudoku-PyQt5.git
 ```
 
 ### 2️⃣ Open the Project
