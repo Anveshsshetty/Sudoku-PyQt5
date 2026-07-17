@@ -215,4 +215,12 @@ Next Number  Place Number
 
 ---
 
+# 📑 Project Report
+
+A detailed project report describing the design, implementation, and working of the application is available below.
+
+📄 **[Download Project Report](Report_on_sudoku_solver1.pdf)**
+
+---
+
 ⭐ **If you found this project useful, consider giving it a star on GitHub!**
