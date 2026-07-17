@@ -165,9 +165,30 @@ Next Number  Place Number
 
 # 📸 Screenshots
 
-| Home Page | Puzzle | Solver |
-|------------|---------|---------|
-| *(Add Screenshot)* | *(Add Screenshot)* | *(Add Screenshot)* |
+## 🏠 Home Page
+
+![Home Page](Screenshots/home.png)
+
+---
+
+## 🎮 Sudoku Generator
+
+![Generator](Screenshots/generator.png)
+
+---
+
+## 🧩 Hint Generator
+
+![Hint](Screenshots/hint.png)
+
+---
+
+## ✅ Sudoku Solver
+
+![Solved](Screenshots/solver.png)
+
+## Invalid Input
+![Invalid](Screenshots/invalid_input.png)
 
 ---
 
