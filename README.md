@@ -1,35 +1,51 @@
-# Sudoku Generator and Solver (PyQt5)
+# 🧩 Sudoku Generator & Solver
 
-A desktop Sudoku application developed using **Python** and **PyQt5**. The application can generate Sudoku puzzles with different difficulty levels and also solve any valid Sudoku entered by the user.
+<p align="center">
+
+**A modern Sudoku Generator and Solver built using Python & PyQt5**
+
+Generate Sudoku puzzles with multiple difficulty levels or solve your own custom puzzles using a fast Backtracking Algorithm.
+
+</p>
 
 ---
 
-## Features
+## ✨ Features
 
-- Generate Sudoku puzzles
-  - Easy
-  - Medium
-  - Hard
-  - Expert
+✅ Generate Sudoku Puzzles
+
+- 🟢 Easy
+- 🟡 Medium
+- 🟠 Hard
+- 🔴 Expert
+
+✅ Sudoku Solver
+
 - Solve any valid Sudoku puzzle
-- Hint system
-- Clear user-entered cells
-- Number pad for easy input
-- Row and column highlighting
-- Different interface for Puzzle Generator and Sudoku Solver
-- Input validation for invalid Sudoku puzzles
+- Detect invalid puzzles
+- Clear invalid inputs automatically
+
+✅ User Friendly Interface
+
+- 🎮 Number pad input
+- 💡 Hint system
+- 🧹 Clear button
+- 📍 Row & Column highlighting
+- 📖 Separate Puzzle Generator and Solver pages
 
 ---
 
-## Technologies Used
+## 🛠 Technologies Used
 
-- Python 3
-- PyQt5
-- Backtracking Algorithm
+| Technology | Purpose |
+|------------|---------|
+| 🐍 Python | Programming Language |
+| 🖥 PyQt5 | GUI Development |
+| 🧠 Backtracking | Sudoku Generation & Solving |
 
 ---
 
-## Project Structure
+# 📂 Project Structure
 
 ```
 Sudoku-PyQt5/
@@ -37,90 +53,49 @@ Sudoku-PyQt5/
 ├── main.py
 ├── README.md
 ├── requirements.txt
-└── .gitignore
 ```
 
 ---
 
-## Code Overview
+# ⚙️ Code Overview
 
-### generate_sudoku()
-
-Generates a Sudoku puzzle based on the selected difficulty level.
-
----
-
-### generate_full_solution()
-
-Creates a complete valid Sudoku grid using the backtracking algorithm.
-
----
-
-### solve()
-
-Uses recursive backtracking to solve a Sudoku puzzle.
+| Function | Description |
+|----------|-------------|
+| `generate_sudoku()` | Generates Sudoku puzzles based on difficulty |
+| `generate_full_solution()` | Creates a complete Sudoku solution |
+| `solve()` | Solves Sudoku using Backtracking |
+| `is_valid()` | Checks whether a move is valid |
+| `is_grid_valid()` | Validates user input before solving |
+| `give_hint()` | Fills one correct number |
+| `clear_grid()` | Clears user-entered values |
+| `create_sudoku_page()` | Creates Puzzle Generator UI |
+| `create_blank_page()` | Creates Sudoku Solver UI |
 
 ---
 
-### is_valid()
+# 🚀 Installation
 
-Checks whether placing a number in a particular cell satisfies Sudoku rules.
-
----
-
-### is_grid_valid()
-
-Validates the user's input before attempting to solve the puzzle.
-
----
-
-### give_hint()
-
-Finds one empty cell and fills it with the correct value.
-
----
-
-### clear_grid()
-
-Clears only the cells entered by the user while preserving the original puzzle.
-
----
-
-### create_sudoku_page()
-
-Creates the Sudoku Generator interface.
-
----
-
-### create_blank_page()
-
-Creates the Sudoku Solver interface where users can enter their own puzzle.
-
----
-
-## Installation
-
-### 1. Clone the repository
+### 1️⃣ Clone the Repository
 
 ```bash
 git clone https://github.com/YOUR_USERNAME/Sudoku-PyQt5.git
 ```
 
-### 2. Open the project folder
+### 2️⃣ Open the Project
 
 ```bash
 cd Sudoku-PyQt5
 ```
 
-### 3. Create a Virtual Environment
+### 3️⃣ Create a Virtual Environment
 
-Windows
+**Windows**
 
 ```bash
 python -m venv venv
 ```
 
-Linux / macOS
+**Linux / macOS**
 
 ```bash
 python3 -m venv venv
@@ -128,7 +103,7 @@ python3 -m venv venv
 
 ---
 
-## Activate the Virtual Environment
+# ▶️ Activate the Virtual Environment
 
 ### Windows
 
@@ -142,15 +117,15 @@ venv\Scripts\activate
 source venv/bin/activate
 ```
 
-After activation, your terminal should look similar to
+If activated successfully, you'll see
 
-```
+```text
 (venv)
 ```
 
 ---
 
-## Install Dependencies
+# 📦 Install Dependencies
 
 ```bash
 pip install -r requirements.txt
@@ -164,7 +139,7 @@ pip install PyQt5
 
 ---
 
-## Run the Application
+# ▶️ Run the Application
 
 ```bash
 python main.py
@@ -172,51 +147,63 @@ python main.py
 
 ---
 
-## How the Solver Works
+# 🧠 How the Solver Works
 
 The application uses the **Backtracking Algorithm**.
 
-1. Find an empty cell.
-2. Try numbers 1 to 9.
-3. Check if the number is valid.
-4. If valid, place the number.
-5. Continue recursively.
-6. If no number fits, backtrack.
-7. Continue until the puzzle is solved.
-
----
-
-## Screenshots
-
-Add screenshots of your application here.
-
-Example
-
 ```
-screenshots/
-    home_page.png
-    sudoku_game.png
-    sudoku_solver.png
+Find Empty Cell
+       │
+       ▼
+Try Number (1-9)
+       │
+       ▼
+Valid?
+ ┌─────┴─────┐
+ │           │
+No          Yes
+ │           │
+ ▼           ▼
+Next Number  Place Number
+                 │
+                 ▼
+        Solve Remaining Cells
+                 │
+                 ▼
+        Backtrack if Needed
 ```
 
 ---
 
-## Future Improvements
+# 📸 Screenshots
 
-- Dark mode
-- Timer
-- Score tracking
-- Save and load puzzles
-- Better puzzle generation with unique solution guarantee
-- Keyboard shortcuts
-- Sound effects
+| Home Page | Puzzle | Solver |
+|------------|---------|---------|
+| *(Add Screenshot)* | *(Add Screenshot)* | *(Add Screenshot)* |
 
 ---
 
-## Author
+# 🚀 Future Improvements
 
-**Anvesh Shetty**
+- 🌙 Dark Mode
+- ⏱ Timer
+- 🏆 Score Tracking
+- 💾 Save & Load Puzzle
+- 🎯 Unique Puzzle Generation
+- ⌨ Keyboard Shortcuts
+- 🔊 Sound Effects
+- 📱 Responsive UI
 
-Electronics and Communication Engineering
+---
 
-Python | PyQt5 | VLSI | Embedded Systems
+# 👨‍💻 Author
+
+### **Anvesh Shetty**
+
+**Electronics & Communication Engineering**
+
+**Python • PyQt5 • VLSI • Embedded Systems**
+
+---
+
+⭐ **If you found this project useful, consider giving it a star on GitHub!**
