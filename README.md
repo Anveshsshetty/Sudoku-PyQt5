@@ -165,30 +165,30 @@ Next Number  Place Number
 
 # 📸 Screenshots
 
-## 🏠 Home Page
-
-![Home Page](Screenshots/home.png)
-
----
-
-## 🎮 Sudoku Generator
-
-![Generator](Screenshots/generator.png)
-
----
-
-## 🧩 Hint Generator
-
-![Hint](Screenshots/hint.png)
-
----
-
-## ✅ Sudoku Solver
-
-![Solved](Screenshots/solver.png)
-
-## Invalid Input
-![Invalid](Screenshots/invalid_input.png)
+<table align="center">
+  <tr>
+    <td align="center">
+      <img src="Screenshots/home.png" width="180"><br>
+      <b>🏠 Home</b>
+    </td>
+    <td align="center">
+      <img src="Screenshots/generator.png" width="180"><br>
+      <b>🎮 Generator</b>
+    </td>
+    <td align="center">
+      <img src="Screenshots/hint.png" width="180"><br>
+      <b>💡 Hint</b>
+    </td>
+    <td align="center">
+      <img src="Screenshots/solver.png" width="180"><br>
+      <b>🧩 Solver</b>
+    </td>
+    <td align="center">
+      <img src="Screenshots/invalid_input.png" width="180"><br>
+      <b>❌ Invalid Input</b>
+    </td>
+  </tr>
+</table>
 
 ---
 
